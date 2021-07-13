@@ -42,24 +42,43 @@ window.addEventListener("keydown", my_KeyDown);
 function my_KeyDown(e) {
     keyDown = e.keyCode;
     console.log(keyDown);
-    if (keyDown == '87') {
+    if (keyDown == '38') {
         console.log("up");
         up();
     }
 
-    if (keyDown == '90') {
+    if (keyDown == '40') {
         console.log("down");
         down();
     }
-    if (keyDown == '65') {
+    if (keyDown == '37') {
         console.log("left");
         left();
     }
-    if (keyDown == '83') {
+    if (keyDown == '39') {
         console.log("right");
         right();
     }
+    if (keyDown == '87') {
+        console.log("w");
+        w();
+    }
 
+    if (keyDown == '90') {
+        console.log("z");
+        z();
+
+    }
+    if (keyDown == '65') {
+        console.log("a");
+        a();
+
+    }
+    if (keyDown == '83') {
+        console.log("s");
+        s();
+
+    }
 }
 
 
@@ -100,32 +119,6 @@ function right() {
         uploadBackground();
         uploadcar2();
         uploadcar1();
-    }
-}
-window.addEventListener("keypressed");
-
-function my_Keypressed(e) {
-    keypressed = e.keyCode;
-    console.log(keypressed);
-    if (keypressed == '119') {
-        console.log("w");
-        w();
-    }
-
-    if (keypressed == '122') {
-        console.log("z");
-        z();
-
-    }
-    if (keypressed == '097') {
-        console.log("a");
-        a();
-
-    }
-    if (keypressed == '115') {
-        console.log("s");
-        s();
-
     }
 }
 
